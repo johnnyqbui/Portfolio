@@ -2,7 +2,7 @@ const Social = () => (
   <div className="social">
     <ul>
         <a href="https://github.com/johnnyqbui" target="_blank">
-            <li>
+            <li className="github">
                 <img src="/static/github.png"/>
             </li>
         </a>
@@ -22,7 +22,7 @@ const Social = () => (
             </li>
         </a>
     </ul>
-    <style jsx>{`
+    <style>{`
         .social {
             position: fixed;
             top: 50%;
