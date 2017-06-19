@@ -27,6 +27,8 @@ const Social = () => (
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
+            z-index: 2;
+            margin: 0 30px;
         }
 
         .social ul {

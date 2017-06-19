@@ -6,7 +6,6 @@ const Title = () => (
             <h1>Johnny Bui</h1>
             <h2>Front End Web Developer</h2>
         </div>
-        <Canvas />
         <style jsx>{`
             .title {
                 text-align: center;
@@ -14,8 +13,6 @@ const Title = () => (
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                z-index: 2;
-                color: white;
             }
 
             .title h1 {

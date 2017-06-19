@@ -78,7 +78,7 @@ var Social = function Social() {
             fileName: _jsxFileName,
             lineNumber: 25
         }
-    }, "\n        .social {\n            position: fixed;\n            top: 50%;\n            transform: translateY(-50%);\n        }\n\n        .social ul {\n            margin: 0;\n            padding: 0;\n        }\n\n        .social li {\n            list-style-type: none;\n            padding: 10px;\n            margin: 30px 0;\n        }\n\n        .social img {\n            width: 25px;\n        }\n    "));
+    }, "\n        .social {\n            position: fixed;\n            top: 50%;\n            transform: translateY(-50%);\n            z-index: 2;\n            margin: 0 30px;\n        }\n\n        .social ul {\n            margin: 0;\n            padding: 0;\n        }\n\n        .social li {\n            list-style-type: none;\n            padding: 10px;\n            margin: 30px 0;\n        }\n\n        .social img {\n            width: 25px;\n        }\n    "));
 };
 
 exports.default = Social;

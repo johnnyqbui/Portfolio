@@ -16,6 +16,10 @@ var _Title = require('../components/Title');
 
 var _Title2 = _interopRequireDefault(_Title);
 
+var _Menu = require('../components/Menu');
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = 'C:\\Users\\Johnny\\Desktop\\personal-portfolio\\pages\\index.js?entry';
@@ -24,17 +28,22 @@ exports.default = function () {
 	return _react2.default.createElement('div', {
 		__source: {
 			fileName: _jsxFileName,
-			lineNumber: 5
+			lineNumber: 6
 		}
-	}, _react2.default.createElement(_Layout2.default, {
+	}, _react2.default.createElement(_Menu2.default, {
 		__source: {
 			fileName: _jsxFileName,
-			lineNumber: 6
+			lineNumber: 7
+		}
+	}), _react2.default.createElement(_Layout2.default, {
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 8
 		}
 	}, _react2.default.createElement(_Title2.default, {
 		__source: {
 			fileName: _jsxFileName,
-			lineNumber: 7
+			lineNumber: 9
 		}
 	})));
 };
