@@ -41,7 +41,7 @@ var Header = function Header() {
             fileName: _jsxFileName,
             lineNumber: 8
         }
-    }), _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Raleway:200', rel: 'stylesheet', __source: {
+    }), _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Raleway:200,500', rel: 'stylesheet', __source: {
             fileName: _jsxFileName,
             lineNumber: 9
         }

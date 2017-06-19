@@ -40,82 +40,68 @@ var _jsxFileName = 'C:\\Users\\Johnny\\Desktop\\personal-portfolio\\components\\
 var _class = function (_Component) {
     (0, _inherits3.default)(_class, _Component);
 
-    function _class(props) {
+    function _class() {
         (0, _classCallCheck3.default)(this, _class);
 
-        var _this = (0, _possibleConstructorReturn3.default)(this, (_class.__proto__ || (0, _getPrototypeOf2.default)(_class)).call(this, props));
-
-        _this.state = { menuOpen: false };
-        return _this;
+        return (0, _possibleConstructorReturn3.default)(this, (_class.__proto__ || (0, _getPrototypeOf2.default)(_class)).apply(this, arguments));
     }
 
     (0, _createClass3.default)(_class, [{
-        key: 'handleCloseMenu',
-        value: function handleCloseMenu() {
-            this.setState({ menuOpen: false });
-        }
-    }, {
-        key: 'handleToggleMenu',
-        value: function handleToggleMenu() {
-            this.setState({ menuOpen: !this.state.menuOpen });
-        }
-    }, {
         key: 'render',
         value: function render() {
-            var menuIsOpen = this.state.menuOpen;
-            var morph = menuIsOpen ? 'menu morphClose' : 'menu morphOpen';
-            return _react2.default.createElement('div', {
-                __source: {
+            var menuToggle = this.props.menuOpen;
+            var morph = menuToggle ? 'menu morphClose' : 'menu morphOpen';
+            return _react2.default.createElement('div', { className: 'rightMenu', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 22
+                    lineNumber: 9
                 }
-            }, _react2.default.createElement('div', { onClick: this.handleCloseMenu.bind(this), className: 'overlay', __source: {
+            }, _react2.default.createElement('div', { onClick: this.props.onCloseMenu.bind(this), className: 'overlay', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 23
+                    lineNumber: 10
                 }
-            }), _react2.default.createElement('div', { onClick: this.handleToggleMenu.bind(this), className: morph, __source: {
+            }), _react2.default.createElement('div', { onClick: this.props.onToggleMenu.bind(this), className: morph, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 25
+                    lineNumber: 11
                 }
             }, _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 26
+                    lineNumber: 12
                 }
             }), _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 27
+                    lineNumber: 13
                 }
             }), _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 28
+                    lineNumber: 14
                 }
             }), _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 29
+                    lineNumber: 15
                 }
             }), _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 30
+                    lineNumber: 16
                 }
             }), _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 31
+                    lineNumber: 17
                 }
             }), _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 32
+                    lineNumber: 18
                 }
             }), _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 33
+                    lineNumber: 19
                 }
             }), _react2.default.createElement('span', { className: 'dot', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 34
+                    lineNumber: 20
                 }
-            })), _react2.default.createElement(_Nav2.default, { isOpen: this.state.menuOpen, __source: {
+            })), _react2.default.createElement(_Nav2.default, { menuOpen: menuToggle, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 36
+                    lineNumber: 22
                 }
             }));
         }

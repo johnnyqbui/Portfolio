@@ -1,11 +1,9 @@
-import Layout from '../components/Layout'
-import Menu from '../components/Menu'
+import Outer from '../components/Outer-Container'
 
 export default () => (
 	<div>
-		<Menu />
-	    <Layout>
-	       <p>This is the Contact page</p>
-	    </Layout>
-    </div>
+		<Outer>
+			<p>This is the Contact page</p>
+		</Outer>
+	</div>
 )

@@ -3,70 +3,76 @@ import Link from 'next/link'
 
 export default class extends Component {
 	render() {
-		let menuIsOpen = this.props.isOpen;
-		const renderMenu = menuIsOpen ? 'sideMenu openNav' : 'sideMenu closeNav'
+		let menuToggle = this.props.menuOpen;
+		const renderMenu = menuToggle ? 'sideMenu closeSideMenu' : 'sideMenu'
 
 		return (
-			<div className={renderMenu}>
-				<ul className="nav">
+			<nav className={renderMenu}>
+				<ul className='nav'>
 					<li>
 				        <Link href="/">
-				          <a className="nav-links" >Home</a>
+				          <a className='nav-links' >HOME</a>
 				        </Link>
 			        </li>
 			    	<li>
 				        <Link className="nav-links" href="/Portfolio">
-				          <a>Portfolio</a>
+				          <a>PORTFOLIO</a>
 				        </Link>
 			        </li>
 			        <li>
 				        <Link className="nav-links" href="/About">
-				          <a>About</a>
+				          <a>ABOUT</a>
 				        </Link>
 				    </li>
 				    <li>
 				        <Link className="nav-links" href="/Contact">
-				          <a>Contact</a>
+				          <a>CONTACT</a>
 				        </Link>
 			        </li>
 		        </ul>
 		        <style jsx>{`
 		        	.sideMenu {
-		        		position: absolute;
-		        		right: 0;
-		        		height: 100vh;
-		        		width: 300px;
-		        		background: #999;
-		        		transition: .5s;
-		        		z-index: 2;
+		        		position: fixed;
+					    right: 0;
+					    z-index: 2;
+					    width: 300px;
+					    height: 100%;
+					    transition: 0.5s;
+					    background: #34383e;
+					    transform: translate3d(100%, 0, 0);
 		        	}
-		        	.openNav {
-		        		right: 0;
-		        	}
-		        	.closeNav {
-		        		right: -300px;
+		        	.closeSideMenu {
+		        		transform: translate3d(0, 0, 0);
 		        	}
 		            .nav {
 		                padding: 0;
 		                margin: 0;
 		                list-style-type: none;
-		                top: 110px;
+		                top: 140px;
     					position: relative;
 		            }
 		            .nav li {
-		            	border-bottom: 1px solid black;
+		            	border-bottom: 1px solid rgba(39, 39, 39, 0.51);
+		            	transition: .3s;
 		            }
 		            .nav li:first-of-type {
-		            	border-top: 1px solid black;
+		            	border-top: 1px solid rgba(39, 39, 39, 0.51);
+		            }
+
+		            .nav li:hover {
+		            	background: rgba(41, 41, 41, 0.51);
 		            }
 		            .nav a {
 		                text-decoration: none;
-		                color: black;
+		                color: #aaa;
 		                display: block;
-		                padding: 20px;
+    					padding: 18px 35px;
+		                font-size: 17px;
+		                font-weight: 500;
+	                    letter-spacing: .5px;
 		            }
 		        `}</style>
-		    </div>
+		    </nav>
 		)
 	}
 }

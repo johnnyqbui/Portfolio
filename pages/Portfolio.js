@@ -1,11 +1,10 @@
-import Layout from '../components/Layout'
-import Menu from '../components/Menu'
+import Outer from '../components/Outer-Container'
 
 export default () => (
 	<div>
-		<Menu />
-	    <Layout>
-	       <p>This is the Portfolio page</p>
-	    </Layout>
-    </div>
+		<Outer>
+			<div className='portfolio'>
+			</div>
+		</Outer>
+	</div>
 )
