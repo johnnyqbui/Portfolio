@@ -1,10 +1,8 @@
 import Outer from '../components/Outer-Container'
+import Projects from '../components/Projects'
 
 export default () => (
-	<div>
-		<Outer>
-			<div className='portfolio'>
-			</div>
-		</Outer>
-	</div>
+	<Outer>
+		<Projects />
+	</Outer>
 )

@@ -40,6 +40,10 @@ var _Layout = require('./Layout');
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
+var _Social = require('./Social');
+
+var _Social2 = _interopRequireDefault(_Social);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = 'C:\\Users\\Johnny\\Desktop\\personal-portfolio\\components\\Outer-Container.js';
@@ -88,7 +92,11 @@ var _class = function (_Component) {
                     fileName: _jsxFileName,
                     lineNumber: 27
                 }
-            }, this.props.children));
+            }, this.props.children), _react2.default.createElement(_Social2.default, { menuOpen: menuToggle, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 30
+                }
+            }));
         }
     }]);
 

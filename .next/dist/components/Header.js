@@ -22,38 +22,33 @@ var _jsxFileName = 'C:\\Users\\Johnny\\Desktop\\personal-portfolio\\components\\
 
 
 var Header = function Header() {
-    return _react2.default.createElement('div', {
+    return _react2.default.createElement(_head2.default, {
         __source: {
             fileName: _jsxFileName,
             lineNumber: 5
         }
-    }, _react2.default.createElement(_head2.default, {
+    }, _react2.default.createElement('title', {
         __source: {
             fileName: _jsxFileName,
             lineNumber: 6
         }
-    }, _react2.default.createElement('title', {
-        __source: {
+    }, 'Johnny Bui | Front End Web Developer'), _react2.default.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0, width=device-width', __source: {
             fileName: _jsxFileName,
             lineNumber: 7
         }
-    }, 'Johnny Bui | Front End Web Developer'), _react2.default.createElement('meta', { name: 'viewport', content: 'initial-scale=1.0, width=device-width', __source: {
+    }), _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Raleway:200,500', rel: 'stylesheet', __source: {
             fileName: _jsxFileName,
             lineNumber: 8
         }
-    }), _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Raleway:200,500', rel: 'stylesheet', __source: {
+    }), _react2.default.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', __source: {
             fileName: _jsxFileName,
             lineNumber: 9
         }
-    }), _react2.default.createElement('link', { href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', __source: {
+    }), _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: _stylesheet2.default }, __source: {
             fileName: _jsxFileName,
             lineNumber: 10
         }
-    }), _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: _stylesheet2.default }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 11
-        }
-    })));
+    }));
 };
 
 exports.default = Header;

@@ -1,84 +1,83 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = "C:\\Users\\Johnny\\Desktop\\personal-portfolio\\components\\Social.js";
+var _jsxFileName = 'C:\\Users\\Johnny\\Desktop\\personal-portfolio\\components\\Social.js';
 
-var Social = function Social() {
-    return _react2.default.createElement("div", { className: "social", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 2
-        }
-    }, _react2.default.createElement("ul", {
-        __source: {
-            fileName: _jsxFileName,
-            lineNumber: 3
-        }
-    }, _react2.default.createElement("a", { href: "https://github.com/johnnyqbui", target: "_blank", __source: {
+var Social = function Social(_ref) {
+    var menuOpen = _ref.menuOpen;
+
+    var socialActive = menuOpen ? 'social socialActive' : 'social';
+    return _react2.default.createElement('div', { className: socialActive, __source: {
             fileName: _jsxFileName,
             lineNumber: 4
         }
-    }, _react2.default.createElement("li", { className: "github", __source: {
+    }, _react2.default.createElement('ul', {
+        __source: {
             fileName: _jsxFileName,
             lineNumber: 5
         }
-    }, _react2.default.createElement("img", { src: "/static/github.png", __source: {
+    }, _react2.default.createElement('a', { href: 'https://github.com/johnnyqbui', target: '_blank', __source: {
             fileName: _jsxFileName,
             lineNumber: 6
         }
-    }))), _react2.default.createElement("a", { href: "https://www.linkedin.com/in/johnnyqbui/", target: "_blank", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 9
-        }
-    }, _react2.default.createElement("li", {
+    }, _react2.default.createElement('li', {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 10
+            lineNumber: 7
         }
-    }, _react2.default.createElement("img", { src: "/static/linkedin.png", __source: {
+    }, _react2.default.createElement('img', { src: '/static/github.png', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8
+        }
+    }))), _react2.default.createElement('a', { href: 'https://www.linkedin.com/in/johnnyqbui/', target: '_blank', __source: {
             fileName: _jsxFileName,
             lineNumber: 11
         }
-    }))), _react2.default.createElement("a", { href: "https://www.instagram.com/jqbui/", target: "_blank", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 14
-        }
-    }, _react2.default.createElement("li", {
+    }, _react2.default.createElement('li', {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 15
+            lineNumber: 12
         }
-    }, _react2.default.createElement("img", { src: "/static/instagram.png", __source: {
+    }, _react2.default.createElement('img', { src: '/static/linkedin.png', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+        }
+    }))), _react2.default.createElement('a', { href: 'https://www.instagram.com/jqbui/', target: '_blank', __source: {
             fileName: _jsxFileName,
             lineNumber: 16
         }
-    }))), _react2.default.createElement("a", { href: "https://codepen.io/jbui/", target: "_blank", __source: {
-            fileName: _jsxFileName,
-            lineNumber: 19
-        }
-    }, _react2.default.createElement("li", {
+    }, _react2.default.createElement('li', {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 20
+            lineNumber: 17
         }
-    }, _react2.default.createElement("img", { src: "/static/codepen.png", __source: {
+    }, _react2.default.createElement('img', { src: '/static/instagram.png', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18
+        }
+    }))), _react2.default.createElement('a', { href: 'https://codepen.io/jbui/', target: '_blank', __source: {
             fileName: _jsxFileName,
             lineNumber: 21
         }
-    })))), _react2.default.createElement("style", {
+    }, _react2.default.createElement('li', {
         __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 22
         }
-    }, "\n        .social {\n            position: fixed;\n            top: 50%;\n            transform: translateY(-50%);\n            z-index: 2;\n            margin: 0 30px;\n        }\n\n        .social ul {\n            margin: 0;\n            padding: 0;\n        }\n\n        .social li {\n            list-style-type: none;\n            padding: 10px;\n            margin: 30px 0;\n        }\n\n        .social img {\n            width: 25px;\n        }\n    "));
+    }, _react2.default.createElement('img', { src: '/static/codepen.png', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+        }
+    })))));
 };
 
 exports.default = Social;

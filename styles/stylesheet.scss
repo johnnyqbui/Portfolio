@@ -1,3 +1,21 @@
+// Breakpoint for Screen Sizes
+$breakpoints: (
+    'small':( min-width: 512px),
+    'medium': ( min-width: 768px),
+    'large': ( min-width: 1025px),
+);
+
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
+    }
+    @else {
+        @warn "Couldn't find a breakpoint named `#{$name}`.";
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,6 +29,10 @@ p, h1, h2, h3, h4, h5, h6, a {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -20,13 +42,42 @@ p, h1, h2, h3, h4, h5, h6, a {
     transform: translate3d(0, 0, 0) rotateY(0);
     transform-style: preserve-3d;
     transition: 0.5s;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 100vh;
     background: #fff;
 }
 
 .pageWrapActive {
     transform: translate3d(-100px, 0px, -600px) rotateY(20deg);
+    overflow: hidden;
+}
+
+@keyframes delayed {
+    0% {
+        z-index: 2;
+    }
+    100% {
+        z-index: 0;
+    }
+}
+
+.delayed-Z {
+    animation-name: delayed;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(100,100,100,0);
+    transition: .5s;
+    z-index: 2;
+}
+
+.overlay--active {
+    background: rgba(100,100,100,.3);
 }
 
 .outerContainer {
@@ -35,7 +86,7 @@ p, h1, h2, h3, h4, h5, h6, a {
     transition: 0.5s;
 }
 
-.overlay {
+.background__menu {
     position: fixed;
     z-index: 0;
     width: 100%;
@@ -118,7 +169,7 @@ p, h1, h2, h3, h4, h5, h6, a {
     height: 40px;
     width: 40px;
 	cursor: pointer;
-    z-index: 3;
+    z-index: 4;
 
     .dot {
         position: absolute;
@@ -127,4 +178,195 @@ p, h1, h2, h3, h4, h5, h6, a {
         background-color: #7d7d7d;
         transition: 0.2s ease-in-out;
     }
+}
+
+.project__list {
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.project {
+    max-width: 350px;
+    width: 100%;
+    margin: 40px 25px;
+    display: inline-block;
+    box-shadow: 2px 5px 20px 10px rgba(46, 61, 73, 0.2);
+    border-radius: 2%;
+    overflow: hidden;
+    transition: .5s;
+    .project__img--container {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .project__image--overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+        }
+    }
+    &:hover {
+        box-shadow: 2px 5px 20px 0 rgba(46, 61, 73, 0.2);
+        .project__info {
+            a {
+                color: #8e8e8e;
+            }
+        }
+    }
+
+    &:hover:nth-of-type(1) {
+        transition: .5s;
+        // .project__image--overlay {
+        //     background: rgba(100, 36, 36, .2);
+        // }
+        // .project__info {
+        //     div {
+        //         border: 1px solid rgba(137,255,178,.8);
+        //     }
+        // }
+    }
+
+    &:nth-of-type(1) {
+        .project__image--overlay {
+            background: linear-gradient(to bottom, rgba(45,229,192,.5) 0%,rgba(137,255,178,.8) 100%);
+        }
+        .project__info {
+            div {
+                border: 1px solid rgba(137,255,178,.8);
+            }
+        }
+    }
+    &:nth-of-type(2) {
+        .project__image--overlay {
+            background: linear-gradient(to bottom, rgba(49,102,247,.5) 0%,rgba(190,133,247,.7) 100%);
+        }
+        .project__info {
+            div {
+                border: 1px solid rgba(190,133,247,.8);
+            }
+        }
+    }
+    &:nth-of-type(3) {
+        .project__image--overlay {
+            background: linear-gradient(to bottom, rgba(237,47,47,.5) 0%,rgba(175,96,166,.8) 100%);
+        }
+        .project__info {
+            div {
+                border: 1px solid rgba(175,96,166,.8);
+            }
+        }
+    }
+    &:nth-of-type(4) {
+        .project__image--overlay {
+            background: linear-gradient(to bottom, rgba(37,94,186,.4) 0%,rgba(47,53,86,.8) 100%);
+        }
+        .project__info {
+            div {
+                border: 1px solid rgba(37,94,186,.8);
+            }
+        }
+    }
+    &:nth-of-type(5) {
+        .project__image--overlay {
+            background: linear-gradient(to bottom, rgba(255,187,50,.6) 0%,rgba(255,188,137,.9) 100%);
+        }
+        .project__info {
+            div {
+                border: 1px solid rgba(255,188,137,.9);
+            }
+        }
+    }
+    .project__info {
+        text-align: left;
+        margin: 35px 30px;
+        font-size: 14px;
+        h2 {
+            font-weight: 500;
+            color: #555;
+        }
+        p {
+            font-weight: 500;
+            color: #777;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: #b1b1b1;
+            font-weight: 500;
+            transition: .5s;
+        }
+        div {
+            width: 135px;
+            height: 35px;
+            margin: 20px 5px 5px 5px;
+            display: inline-flex;
+            background: #fff;
+            transition: .5s;
+        }
+    }
+}
+
+
+
+.social {
+    position: absolute;
+    top: 400px;
+    right: 0;
+    z-index: 3;
+    margin: 0 30px;
+    transform: translate3d(512px, 0, 0) rotateY(0);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.socialActive {
+    transform: translate3d(0, 0, 0) rotateY(0);
+}
+
+.social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    padding: 10px;
+    margin: 5px;
+}
+
+.social img {
+    width: 35px;
+}
+
+
+@include breakpoint('small') {
+    .social {
+        top: 50%;
+        transform: translate3d(0, -50%, 0) rotateY(0);
+        transform-style: preserve-3d;
+        right: auto;
+    }
+
+    .socialActive {
+        transform: translate3d(-100px, -50%, -600px) rotateY(20deg);
+    }
+
+    .social li {
+        padding: 10px;
+        margin: 30px 0;
+    }
+
+    .social img {
+        width: 25px;
+    }
+
 }

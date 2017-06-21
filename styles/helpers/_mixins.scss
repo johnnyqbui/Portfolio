@@ -1,0 +1,17 @@
+// Breakpoint for Screen Sizes
+$breakpoints: (
+    'small':( min-width: 512px),
+    'medium': ( min-width: 768px),
+    'large': ( min-width: 1025px),
+);
+
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
+    }
+    @else {
+        @warn "Couldn't find a breakpoint named `#{$name}`.";
+    }
+}

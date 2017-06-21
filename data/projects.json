@@ -1,0 +1,41 @@
+[ {
+    "title": "Todo Application",
+    "dates": "December 2016",
+    "description": "Todo application using local storage to persist data",
+    "skills": "React, Redux, Webpack, Express, SASS",
+    "image": "static/react-todo.jpg",
+    "github": "https://github.com/johnnyqbui/React-Todo",
+    "url": "http://thawing-garden-56451.herokuapp.com/"
+}, {
+    "title": "Twitch Streamers",
+    "dates": "November 2016",
+    "description": "Display list of Twitch streamers and their status",
+    "skills": "React, Webpack, Express, SASS",
+    "image": "static/twitch-streamers.jpg",
+    "github": "https://github.com/johnnyqbui/twitch-streamers",
+    "url": "https://johnnyqbui.github.io/twitch-streamers/"
+}, {
+    "title": "Wikipedia Viewer",
+    "dates": "October 2016",
+    "description": "Search for wikipedia articles by input or random.",
+    "skills": "Angular 1, Webpack, SASS",
+    "image": "static/wiki-viewer.jpg",
+    "github": "https://github.com/johnnyqbui/wiki-viewer",
+    "url": "https://johnnyqbui.github.io/wiki-viewer/"
+}, {
+    "title": "Neighborhood Map",
+    "dates": "July 2016",
+    "description": "App that show suggested locations in Seattle, WA.",
+    "skills": "Knockout, Gulp, jQuery",
+    "image": "static/neighborhood-map.jpg",
+    "github": "https://github.com/johnnyqbui/Project-Neighborhood-Map",
+    "url": "https://johnnyqbui.github.io/Project-Neighborhood-Map/"
+}, {
+    "title": "Arcade Game",
+    "dates": "May 2016",
+    "description": "Inspired by frogger game, created HTML5 canvas game with use of Object Oriented JavaScript",
+    "skills": "HTML5 Canvas, Vanilla JS",
+    "image": "static/arcade-game.jpg",
+    "github": "https://github.com/johnnyqbui/Arcade-Game-Frogger-Clone",
+    "url": "http://johnnyqbui.github.io/Arcade-Game-Frogger-Clone"
+}]

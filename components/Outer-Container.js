@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Menu from './Menu'
 import Layout from './Layout'
-
+import Social from './Social'
 
 export default class extends Component {
     constructor(props) {
@@ -27,6 +27,7 @@ export default class extends Component {
                 <Layout menuOpen={menuToggle} onCloseMenu={this.handleCloseMenu.bind(this)}>
                     {this.props.children}
                 </Layout>
+                <Social menuOpen={menuToggle}/>
             </div>
         )
     }
