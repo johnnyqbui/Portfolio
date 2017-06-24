@@ -512,7 +512,7 @@ a {
 
 .about__img {
     img {
-        animation: slide-up 1s .5s forwards;
+        animation: slide-up 1s .7s forwards;
         opacity: 0;
         display: none;
         position: relative;
@@ -696,7 +696,8 @@ $bottom-right: -20px;
     .about__text {
         max-width: 100%;
         p {
-            animation: slide-left 1s forwards;
+            animation: slide-left 1s .5s forwards;
+            opacity: 0;
             top: 50px;
             width: 40%;
         }
