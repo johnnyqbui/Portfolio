@@ -30,16 +30,6 @@ const Nav = ({menuOpen}) => {
 	        	<p>Designed/Developed by Johnny Bui, 2017</p>
 	        </div>
 	        <style jsx>{`
-	        	.sideMenu {
-	        		position: fixed;
-				    right: 0;
-				    z-index: 3;
-				    width: 300px;
-				    height: 100%;
-				    transition: 0.5s;
-				    background: #34383e;
-				    transform: translate3d(100%, 0, 0);
-	        	}
 	        	.closeSideMenu {
 	        		transform: translate3d(0, 0, 0);
 	        	}

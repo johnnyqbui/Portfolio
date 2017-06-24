@@ -3,7 +3,16 @@ import Outer from '../components/Outer-Container'
 export default () => (
 	<Outer>
         <header className="title">
-            <h1>Johnny Bui</h1>
+            <h1>
+                <span>J</span>
+                <span>o</span>
+                <span>h</span>
+                <span>n</span>
+                <span>n</span>
+                <span>y</span> <span>B</span>
+                <span>u</span>
+                <span>i</span>
+            </h1>
             <h2>Front End Web Developer</h2>
             <h3>Bringing Ideas to Life</h3>
         </header>
@@ -25,7 +34,7 @@ export default () => (
                 letter-spacing: 2px;
                 font-size: 1.2em;
             }
-            .title h2 {
+            .title h3 {
                 margin: 0 0 5px 0;
                 letter-spacing: 2px;
             }
