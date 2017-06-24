@@ -18,18 +18,6 @@ var _Projects2 = _interopRequireDefault(_Projects);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'C:\\Users\\Johnny\\Desktop\\personal-portfolio\\pages\\Portfolio.js?entry';
-
 exports.default = function () {
-	return _react2.default.createElement(_OuterContainer2.default, {
-		__source: {
-			fileName: _jsxFileName,
-			lineNumber: 5
-		}
-	}, _react2.default.createElement(_Projects2.default, {
-		__source: {
-			fileName: _jsxFileName,
-			lineNumber: 6
-		}
-	}));
+	return _react2.default.createElement(_OuterContainer2.default, null, _react2.default.createElement(_Projects2.default, null));
 };

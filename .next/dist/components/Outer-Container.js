@@ -46,9 +46,6 @@ var _Social2 = _interopRequireDefault(_Social);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'C:\\Users\\Johnny\\Desktop\\personal-portfolio\\components\\Outer-Container.js';
-
-
 var _class = function (_Component) {
     (0, _inherits3.default)(_class, _Component);
 
@@ -75,28 +72,7 @@ var _class = function (_Component) {
         key: 'render',
         value: function render() {
             var menuToggle = this.state.menuOpen;
-            return _react2.default.createElement('div', { className: 'outerContainer', __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 24
-                }
-            }, _react2.default.createElement(_Header2.default, {
-                __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 25
-                }
-            }), _react2.default.createElement(_Menu2.default, { menuOpen: menuToggle, onToggleMenu: this.handleToggleMenu.bind(this), onCloseMenu: this.handleCloseMenu.bind(this), __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 26
-                }
-            }), _react2.default.createElement(_Layout2.default, { menuOpen: menuToggle, onCloseMenu: this.handleCloseMenu.bind(this), __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 27
-                }
-            }, this.props.children), _react2.default.createElement(_Social2.default, { menuOpen: menuToggle, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 30
-                }
-            }));
+            return _react2.default.createElement('div', { className: 'outerContainer' }, _react2.default.createElement(_Header2.default, null), _react2.default.createElement(_Menu2.default, { menuOpen: menuToggle, onToggleMenu: this.handleToggleMenu.bind(this), onCloseMenu: this.handleCloseMenu.bind(this) }), _react2.default.createElement(_Layout2.default, { menuOpen: menuToggle, onCloseMenu: this.handleCloseMenu.bind(this) }, this.props.children), _react2.default.createElement(_Social2.default, { menuOpen: menuToggle }));
         }
     }]);
 

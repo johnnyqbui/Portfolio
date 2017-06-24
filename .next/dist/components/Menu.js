@@ -14,8 +14,7 @@ var _Nav2 = _interopRequireDefault(_Nav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'C:\\Users\\Johnny\\Desktop\\personal-portfolio\\components\\Menu.js',
-    _this = undefined;
+var _this = undefined;
 
 var Menu = function Menu(_ref) {
     var menuOpen = _ref.menuOpen,
@@ -24,63 +23,7 @@ var Menu = function Menu(_ref) {
 
     var morph = menuOpen ? 'menu morphClose' : 'menu morphOpen';
     var overlay = menuOpen ? 'overlay overlay--active' : 'overlay delayed-Z';
-    return _react2.default.createElement('div', { className: 'rightMenu', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 7
-        }
-    }, _react2.default.createElement('div', { className: 'background__menu', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 8
-        }
-    }), _react2.default.createElement('div', { onClick: onCloseMenu.bind(_this), className: overlay, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 9
-        }
-    }), _react2.default.createElement('div', { onClick: onToggleMenu.bind(_this), className: morph, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 10
-        }
-    }, _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 11
-        }
-    }), _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 12
-        }
-    }), _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 13
-        }
-    }), _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 14
-        }
-    }), _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 15
-        }
-    }), _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 16
-        }
-    }), _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 17
-        }
-    }), _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 18
-        }
-    }), _react2.default.createElement('span', { className: 'dot', __source: {
-            fileName: _jsxFileName,
-            lineNumber: 19
-        }
-    })), _react2.default.createElement(_Nav2.default, { menuOpen: menuOpen, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-        }
-    }));
+    return _react2.default.createElement('div', { className: 'rightMenu' }, _react2.default.createElement('div', { className: 'background__menu' }), _react2.default.createElement('div', { onClick: onCloseMenu.bind(_this), className: overlay }), _react2.default.createElement('div', { onClick: onToggleMenu.bind(_this), className: morph }, _react2.default.createElement('span', { className: 'dot' }), _react2.default.createElement('span', { className: 'dot' }), _react2.default.createElement('span', { className: 'dot' }), _react2.default.createElement('span', { className: 'dot' }), _react2.default.createElement('span', { className: 'dot' }), _react2.default.createElement('span', { className: 'dot' }), _react2.default.createElement('span', { className: 'dot' }), _react2.default.createElement('span', { className: 'dot' }), _react2.default.createElement('span', { className: 'dot' })), _react2.default.createElement(_Nav2.default, { menuOpen: menuOpen }));
 };
 
 exports.default = Menu;

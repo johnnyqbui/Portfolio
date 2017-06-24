@@ -6,22 +6,22 @@ const Nav = ({menuOpen}) => {
 		<nav className={renderMenu}>
 			<ul className='nav'>
 				<li>
-			        <Link href="/">
+			        <Link prefetch href="/">
 			          <a className='nav-links' >HOME</a>
 			        </Link>
 		        </li>
 		    	<li>
-			        <Link className="nav-links" href="/Portfolio">
+			        <Link prefetch className="nav-links" href="/Portfolio">
 			          <a>PORTFOLIO</a>
 			        </Link>
 		        </li>
 		        <li>
-			        <Link className="nav-links" href="/About">
+			        <Link prefetch className="nav-links" href="/About">
 			          <a>ABOUT</a>
 			        </Link>
 			    </li>
 			    <li>
-			        <Link className="nav-links" href="/Contact">
+			        <Link prefetch className="nav-links" href="/Contact">
 			          <a>CONTACT</a>
 			        </Link>
 		        </li>
