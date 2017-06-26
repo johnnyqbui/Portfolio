@@ -11,17 +11,17 @@ const Nav = ({menuOpen}) => {
 			        </Link>
 		        </li>
 		    	<li>
-			        <Link prefetch className="nav-links" href="/Portfolio">
+			        <Link prefetch className="nav-links" href="/portfolio">
 			          <a>PORTFOLIO</a>
 			        </Link>
 		        </li>
 		        <li>
-			        <Link prefetch className="nav-links" href="/About">
+			        <Link prefetch className="nav-links" href="/about">
 			          <a>ABOUT</a>
 			        </Link>
 			    </li>
 			    <li>
-			        <Link prefetch className="nav-links" href="/Contact">
+			        <Link prefetch className="nav-links" href="/contact">
 			          <a>CONTACT</a>
 			        </Link>
 		        </li>

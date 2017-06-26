@@ -344,8 +344,10 @@ a {
         }
     }
 
-    &:hover:nth-of-type(1) {
-        transition: .5s;
+    @for $i from 1 through 9 {
+        &:nth-of-type(#{$i}) {
+            transition: .5s;
+        }
     }
 
     &:nth-of-type(1) {

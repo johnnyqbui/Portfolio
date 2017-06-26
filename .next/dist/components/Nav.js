@@ -29,15 +29,15 @@ var Nav = function Nav(_ref) {
 	}, _react2.default.createElement(_link2.default, { prefetch: true, href: '/' }, _react2.default.createElement('a', { className: 'nav-links', 'data-jsx': 797085688
 	}, 'HOME'))), _react2.default.createElement('li', {
 		'data-jsx': 797085688
-	}, _react2.default.createElement(_link2.default, { prefetch: true, className: 'nav-links', href: '/Portfolio' }, _react2.default.createElement('a', {
+	}, _react2.default.createElement(_link2.default, { prefetch: true, className: 'nav-links', href: '/portfolio' }, _react2.default.createElement('a', {
 		'data-jsx': 797085688
 	}, 'PORTFOLIO'))), _react2.default.createElement('li', {
 		'data-jsx': 797085688
-	}, _react2.default.createElement(_link2.default, { prefetch: true, className: 'nav-links', href: '/About' }, _react2.default.createElement('a', {
+	}, _react2.default.createElement(_link2.default, { prefetch: true, className: 'nav-links', href: '/about' }, _react2.default.createElement('a', {
 		'data-jsx': 797085688
 	}, 'ABOUT'))), _react2.default.createElement('li', {
 		'data-jsx': 797085688
-	}, _react2.default.createElement(_link2.default, { prefetch: true, className: 'nav-links', href: '/Contact' }, _react2.default.createElement('a', {
+	}, _react2.default.createElement(_link2.default, { prefetch: true, className: 'nav-links', href: '/contact' }, _react2.default.createElement('a', {
 		'data-jsx': 797085688
 	}, 'CONTACT')))), _react2.default.createElement('div', { className: 'credits', 'data-jsx': 797085688
 	}, _react2.default.createElement('p', {

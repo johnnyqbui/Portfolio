@@ -12,13 +12,13 @@ var _classCallCheck2 = require('babel-runtime/helpers/classCallCheck');
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _createClass2 = require('babel-runtime/helpers/createClass');
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
 var _possibleConstructorReturn2 = require('babel-runtime/helpers/possibleConstructorReturn');
 
 var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _createClass2 = require('babel-runtime/helpers/createClass');
+
+var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _inherits2 = require('babel-runtime/helpers/inherits');
 
@@ -44,10 +44,22 @@ var _Social = require('./Social');
 
 var _Social2 = _interopRequireDefault(_Social);
 
+var _reactGa = require('react-ga');
+
+var _reactGa2 = _interopRequireDefault(_reactGa);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _class = function (_Component) {
     (0, _inherits3.default)(_class, _Component);
+
+    (0, _createClass3.default)(_class, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            _reactGa2.default.initialize('UA-84281720-1');
+            _reactGa2.default.pageview(document.location.pathname);
+        }
+    }]);
 
     function _class(props) {
         (0, _classCallCheck3.default)(this, _class);
